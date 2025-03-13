@@ -23,6 +23,7 @@ header {
     border: 5px solid #dff2eb; 
     font-family: 'Anton', sans-serif;
     z-index: 1000; 
+}
 
 .menu-toggle {
     display: none;
@@ -168,5 +169,4 @@ footer {
     color: #6ff0c1; 
     font-size: 25px;
     font-family: 'Bungee', sans-serif;
-}
 }

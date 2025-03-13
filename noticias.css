@@ -125,6 +125,7 @@ header {
     margin-top: 30vh; 
     gap: 20px; 
     transform: translateY(-50%); 
+}
 
 .news-box {
     width: 30%;
@@ -215,5 +216,4 @@ footer {
     color: #6ff0c1; 
     font-size: 25px;
     font-family: 'Bungee', sans-serif;
-}
 }
