@@ -69,6 +69,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2000;
+    top: 100px; /* Ajusta la posición del menú para que esté debajo del header */
 }
 
 .menu ul {
@@ -125,7 +126,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 120px; 
+    margin-top: 220px; /* Ajusta el margen superior para que las ligas aparezcan justo debajo del menú */
 }
 
 .ligas a {

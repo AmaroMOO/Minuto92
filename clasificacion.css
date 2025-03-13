@@ -142,9 +142,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    padding: 20px;
-    margin-top: 50vh; 
-    transform: translateY(-50%); /* Centra verticalmente las cajas */
+    padding: 30px;
+    margin-top: 200px; /* Ajusta el margen superior para separar del header */
 }
 
 .liga-box {
