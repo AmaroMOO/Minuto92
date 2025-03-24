@@ -4,9 +4,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px; 
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -22,7 +19,7 @@ header {
     height: 100px;
     border: 5px solid #dff2eb; 
     font-family: 'Anton', sans-serif;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .menu-toggle {
@@ -44,28 +41,31 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Ajusta el tamaño del logo */
-    margin-left: 10px;
+    height: 200px; 
+    margin-left: 40px;
 }
 
 .idioma {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex: 1;
+    position: absolute;
+    right: 10px;
 }
 
 .idioma img {
     height: 40px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 .menu {
     display: flex;
     justify-content: center; 
-    flex: 2; /* Ajusta el espacio ocupado por el menú */
-    position: relative; /* Cambia la posición para que esté dentro del header */
+    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000; 
 }
 
 .menu ul {
@@ -76,9 +76,9 @@ header {
 }
 
 .menu ul li {
-    position: relative;
-    padding: 10px 15px; /* Ajusta el padding de los elementos del menú */
-    transition: background-color 0.3s; 
+    position: relative; 
+    padding: 15px; 
+    transition: background-color 0.3s;
 }
 
 .menu ul li:hover {
@@ -88,7 +88,7 @@ header {
 .menu ul li a {
     text-decoration: none;
     color: #000;
-    padding: 10px;
+    padding: 15px;
     display: block;
 }
 
@@ -101,7 +101,7 @@ header {
     padding: 10px; 
     margin: 0;
     background-color: #dff2eb;
-    border: 5px solid #a3d9c5;
+    border: 5px solid #a3d9c5; 
     z-index: 2000; 
 }
 
@@ -111,18 +111,17 @@ header {
 
 .menu ul li ul.submenu li a {
     padding: 10px;
-    border: none; 
+    border: none;
 }
 
 .menu-toggle:checked + .menu-icon + .menu {
     display: block;
 }
-
 .ligas {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 220px; /* Ajusta el margen superior para que las ligas aparezcan justo debajo del menú */
+    margin-top: 120px; 
 }
 
 .ligas a {
