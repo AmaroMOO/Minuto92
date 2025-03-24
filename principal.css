@@ -44,32 +44,28 @@ header {
 }
 
 .logo img {
-    height: 200px; 
-    margin-left: 40px;
+    height: 80px; /* Ajusta el tamaño del logo */
+    margin-left: 10px;
 }
 
 .idioma {
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 10px;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .idioma img {
     height: 40px;
     margin-left: 10px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .menu {
     display: flex;
     justify-content: center; 
-    flex: 1; 
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2000;
-    top: 100px; /* Ajusta la posición del menú para que esté debajo del header */
+    flex: 2; /* Ajusta el espacio ocupado por el menú */
+    position: relative; /* Cambia la posición para que esté dentro del header */
 }
 
 .menu ul {
@@ -81,7 +77,7 @@ header {
 
 .menu ul li {
     position: relative;
-    padding: 15px; 
+    padding: 10px 15px; /* Ajusta el padding de los elementos del menú */
     transition: background-color 0.3s; 
 }
 
@@ -92,7 +88,7 @@ header {
 .menu ul li a {
     text-decoration: none;
     color: #000;
-    padding: 15px;
+    padding: 10px;
     display: block;
 }
 
@@ -170,46 +166,5 @@ footer {
     color: #6ff0c1; 
     font-size: 25px;
     font-family: 'Bungee', sans-serif;
-}
-
-/* Media query para pantallas de 768px o menos */
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
-        height: auto; /* Ajusta la altura automáticamente */
-        padding: 10px;
-    }
-
-    .logo img {
-        height: 100px; /* Reduce el tamaño del logo */
-        margin-left: 0; /* Elimina el margen izquierdo */
-    }
-
-    .menu {
-        flex: 1 1 100%; /* Ocupa el 100% del ancho disponible */
-        justify-content: center; /* Centra el menú */
-        margin-top: 10px; /* Añade espacio entre el logo y el menú */
-    }
-
-    .menu ul {
-        flex-direction: column; /* Cambia el menú a una disposición vertical */
-        align-items: center; /* Centra los elementos del menú */
-    }
-
-    .menu ul li {
-        padding: 10px; /* Reduce el padding de los elementos del menú */
-    }
-
-    .idioma {
-        flex: 1 1 100%; /* Ocupa el 100% del ancho disponible */
-        display: flex;
-        justify-content: center; /* Centra las banderas */
-        margin-top: 10px; /* Añade espacio entre el menú y las banderas */
-    }
-
-    .idioma img {
-        height: 30px; /* Reduce el tamaño de las banderas */
-        margin: 0 5px; /* Añade un pequeño margen entre las banderas */
-    }
 }
 
